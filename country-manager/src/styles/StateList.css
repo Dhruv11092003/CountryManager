@@ -42,12 +42,14 @@
     width: 100%;
   }
   
+  
+
   .state-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 5px 10px 5px;
     background: #e9ecef;
     border-radius: 5px;
     margin-bottom: 5px;

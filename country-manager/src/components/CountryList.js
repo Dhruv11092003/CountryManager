@@ -39,7 +39,7 @@ function CountryList({ countries, setCountries }) {
       <ul className="country-list">
         {countries.map((country, index) => (
           <li key={index} className="country-item">
-            
+
             <div className='country-item-in'>
             <h3>{country.name}</h3>
             <div>
