@@ -17,7 +17,7 @@ function CityList({ state, updateState }) {
 
   return (
     <div className="city-container">
-     <div>
+     <div className='city-top-container'>
       <h4>Cities</h4>
       <button onClick={addCity}>Add City</button>
       </div>

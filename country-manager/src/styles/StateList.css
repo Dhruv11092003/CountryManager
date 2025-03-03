@@ -51,8 +51,13 @@
     background: #e9ecef;
     border-radius: 5px;
     margin-bottom: 5px;
+    width: 100%;
   }
 
+  .cityList-container{
+    margin-top: 10px;
+    width: 100%;
+  }
   /* .state-item-in{
     width: 100%;
     flex-direction: row;
@@ -77,6 +82,8 @@
         width: 100%;
         flex-direction: column;
     }
+
+    
 
     .state-item-in{
         width: 100%;

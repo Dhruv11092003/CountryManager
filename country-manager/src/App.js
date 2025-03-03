@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="main-container">
-      <h1>Country, State, and City Management</h1>
+      <h1 className="main-heading">Country, State, and City Management</h1>
       <div className="app-container">
         <CountryList countries={countries} setCountries={setCountries} />
       </div>

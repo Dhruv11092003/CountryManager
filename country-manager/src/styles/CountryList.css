@@ -5,6 +5,8 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-height: 70vh;
   }
 
   .country-container button {
@@ -25,8 +27,15 @@
   .country-list {
     list-style: none;
     margin-top: 10px;
+    overflow-y: auto;
+    max-height: 80%;
   }
   
+  .manager-heading{
+    text-align: center;
+    color: rgb(122, 122, 122);
+  }
+
   .country-item {
     background: #f8f9fa;
     padding: 10px;

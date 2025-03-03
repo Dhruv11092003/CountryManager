@@ -24,7 +24,7 @@ function CountryList({ countries, setCountries }) {
 
   return (
     <div className="country-container">
-      <h1>Country Management</h1>
+      <h1 className='manager-heading'>Country, State, and City Manager</h1>
       <button onClick={addCountry}>Add Country</button>
       <ul className="country-list">
         {countries.map((country, index) => (

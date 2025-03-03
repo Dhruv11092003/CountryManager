@@ -9,6 +9,12 @@ function StateList({ country, updateCountry }) {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
+  const updateState = (index, updatedState) => {
+    const newStates = [...country.states];
+    newStates[index] = updatedState;
+    updateCountry({ ...country, states: newStates });
+  };
+
   const addState = () => {
     const stateName = prompt('Enter state name:');
     if (stateName) {
@@ -40,8 +46,8 @@ function StateList({ country, updateCountry }) {
             <button onClick={() => deleteState(index)}>Delete</button>
             </div>
             </div>
-            <div>
-            {expandedIndex === index && <CityList state={state} />}
+            <div className='cityList-container'>
+            {expandedIndex === index && <CityList state={state}  updateState={(updatedState) => updateState(index, updatedState)}/>}
             </div>
           </li>
         ))}

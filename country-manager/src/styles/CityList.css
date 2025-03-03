@@ -6,6 +6,12 @@
     width: 100%;
   }
   
+.city-top-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
   .city-container h4 {
     color: #333;
     font-size: 16px;
