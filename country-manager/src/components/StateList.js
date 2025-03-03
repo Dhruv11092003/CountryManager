@@ -22,6 +22,16 @@ function StateList({ country, updateCountry }) {
     }
   };
 
+  const editState = (index) => {
+    const newName = prompt('Enter new state name:', country.states[index].name);
+    if (newName && window.confirm(`Are you sure you want to rename this state to "${newName}"?`)) {
+      const newStates = [...country.states];
+      newStates[index].name = newName;
+      updateCountry({ ...country, states: newStates });
+    }
+  };
+  
+
   const deleteState = (index) => {
     if (window.confirm('Are you sure you want to delete this state?')) {
       updateCountry({ ...country, states: country.states.filter((_, i) => i !== index) });
@@ -43,6 +53,7 @@ function StateList({ country, updateCountry }) {
             <button onClick={() => toggleExpand(index)}>
               {expandedIndex === index ? "Collapse" : "Expand"}
             </button>
+            <button onClick={() => editState(index)}>Edit</button>
             <button onClick={() => deleteState(index)}>Delete</button>
             </div>
             </div>

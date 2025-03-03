@@ -16,6 +16,16 @@ function CountryList({ countries, setCountries }) {
     }
   };
 
+  const editCountry = (index) => {
+    const newName = prompt('Enter new country name:', countries[index].name);
+    if (newName && window.confirm(`Are you sure you want to rename this country to "${newName}"?`)) {
+      const newCountries = [...countries];
+      newCountries[index].name = newName;
+      setCountries(newCountries);
+    }
+  };
+  
+
   const deleteCountry = (index) => {
     if (window.confirm('Are you sure you want to delete this country?')) {
       setCountries(countries.filter((_, i) => i !== index));
@@ -36,6 +46,7 @@ function CountryList({ countries, setCountries }) {
             <button onClick={() => toggleExpand(index)}>
               {expandedIndex === index ? "Collapse" : "Expand"}
             </button>
+            <button onClick={() => editCountry(index)}>Edit</button>
             <button onClick={() => deleteCountry(index)}>Delete</button>
             </div>
             </div>
