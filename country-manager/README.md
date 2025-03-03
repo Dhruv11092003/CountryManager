@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🌍 Country-State-City Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+The **Country-State-City Management App** is a React-based project that allows users to **add, edit, and delete** hierarchical data for **countries, states, and cities**. It provides a **clean UI** with **expand/collapse functionality** and ensures **data persistence using local storage**.
 
-In the project directory, you can run:
+Deployed Link: https://country-manager.vercel.app/
 
-### `npm start`
+## ✅ Features at a Glance
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Expand/Collapse** for better navigation
+- **Auto-scroll** to maintain a clean layout
+- **Mobile-first, fully responsive design**
+- **Local Storage integration** for data persistence
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🌎 Country Management
+- Add, edit, and delete countries
+- Expand a country to view and manage states
 
-### `npm run build`
+### 🏛️ State Management
+- Add, edit, and delete states within a country
+- Expand a state to view and manage cities
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🏙️ City Management
+- Add and delete cities within a state
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🎨 UI Enhancements
+- **Expand/Collapse Buttons** for better usability
+- **Auto-scroll lists** to prevent layout overflow
+- **Modern, responsive layout** for a seamless experience across devices
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💾 Local Storage Integration
+- **Data persists** on reload
+- Uses `localStorage` to save changes automatically
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+/country-manager
+  ├── src
+  │   ├── components
+  │   │   ├── CountryList.js  # Handles country management
+  │   │   ├── StateList.js    # Handles state management
+  │   │   ├── CityList.js     # Handles city management
+  │   ├── styles
+  │   │   ├── CountryList.css # Styles for CountryList
+  │   │   ├── StateList.css   # Styles for StateList
+  │   │   ├── CityList.css    # Styles for CityList
+  │   ├── index.js            # Renders the app
+  |   |── App.js          # Main app component   
+  │   ├── App.css         # Global styles      
+  ├── public
+  ├── package.json
+  ├── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Installation & Setup
 
-## Learn More
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/Dhruv11092003/CountryManager.git
+cd country-manager
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2️⃣ Install dependencies
+```sh
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3️⃣ Start the app
+```sh
+npm start
+```
+The app will open at `http://localhost:3000` 🚀
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Technologies Used
 
-### Analyzing the Bundle Size
+- **React.js** – Component-based UI development
+- **JavaScript (ES6+)** – State and event handling
+- **CSS3 (Flexbox)** – Modern and responsive UI
+- **Local Storage** – Persistent data storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- ✅ Implement search & filter functionality
+- ✅ Add dark mode support
+- ✅ Backend API integration
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📜 License
 
-### Deployment
+This project is **open-source** and available under the **MIT License**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+🎯 **Your README is now polished, structured, and informative!** 🚀
+Let me know if you need any tweaks or additions! 🔥
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
